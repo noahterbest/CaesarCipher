@@ -172,6 +172,23 @@
           </messages>
           <updatedAt value="2024-02-27T14:36:19.17412" />
         </chat>
+        <chat>
+          <accountId value="VXNlcjozMDczNzA=" />
+          <internalId value="e3a9d280-a91c-4108-b522-e203bed9d604" />
+          <messages>
+            <list>
+              <message>
+                <speaker value="HUMAN" />
+                <text value="can you write me a simple caesar cipher using parallel arrays in java" />
+              </message>
+              <message>
+                <speaker value="ASSISTANT" />
+                <text value=" Here is a simple Caesar cipher implementation using parallel arrays in Java:&#10;&#10;```java&#10;char[] alphabet = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', &#10;                   'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};&#10;                   &#10;char[] shifted = {'d', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', &#10;                  'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c'};&#10;&#10;String plaintext = &quot;hello&quot;; &#10;&#10;String ciphertext = &quot;&quot;;&#10;&#10;for(int i=0; i&lt;plaintext.length(); i++) {&#10;  char ch = plaintext.charAt(i);&#10;  int index = -1;&#10;  for(int j=0; j&lt;alphabet.length; j++) {&#10;    if(ch == alphabet[j]) {&#10;      index = j;&#10;      break;&#10;    }&#10;  }&#10;  &#10;  if(index != -1) {&#10;    ciphertext += shifted[index]; &#10;  } else {&#10;    ciphertext += ch;&#10;  }&#10;}&#10;&#10;System.out.println(ciphertext); // Prints &quot;khoor&quot;&#10;```&#10;&#10;This uses two parallel arrays - one for the original alphabet and one for the shifted alphabet. It loops through the plaintext, looks up each character in the original alphabet to find its index, then gets the shifted character at that same index from the shifted alphabet." />
+              </message>
+            </list>
+          </messages>
+          <updatedAt value="2024-02-27T16:22:50.319525" />
+        </chat>
       </list>
     </chats>
   </component>
